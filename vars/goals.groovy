@@ -1,4 +1,3 @@
-def MavenGoal(String name) 
-{
+def clone( String name ) {
     echo "Hello, ${name}"
 }
