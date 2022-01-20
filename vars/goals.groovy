@@ -1,3 +1,3 @@
-def clone( String name ) {
-    echo "Hello, ${name}"
+def clone(strign branch_name,string Url ) {
+  git branch: '$branch_name', url: '$Url'
 }
