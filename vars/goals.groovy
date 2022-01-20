@@ -1,4 +1,4 @@
 def MavenGoal(String name) 
 {
-    echo "Hello, ${name}."
+    echo "Hello, ${name}"
 }
