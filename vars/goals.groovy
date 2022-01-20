@@ -5,13 +5,15 @@ def clone(String branch_name,String Url) {
   
 }
 def test (){
-sh 'mvn compile'
+sh 'mvn clean compile'
 sh 'mvn pmd:pmd'
 sh 'mvn checkstyle:checkstyle'
+sh 'mvn cobertura:cobertura'
 }
 def report(){
 recordIssues(tools: [pmdParser()])
 recordIssues(tools: [checkStyle()])
+
 }
 def clean(){
 sh 'mvn clean'
