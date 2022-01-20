@@ -1,4 +1,4 @@
-def call(String branch_name,URL Url ) {
+def call(java.lang.String branch_name, java.net.URL Url) {
   echo "$branch_name"
   echo "$Url"
   git branch: '$branch_name', url: '$Url'
