@@ -13,6 +13,7 @@ sh 'mvn cobertura:cobertura'
 def report(){
 recordIssues(tools: [pmdParser()])
 recordIssues(tools: [checkStyle()])
+publishCoverage adapters: [coberturaAdapter('')], sourceFileResolver: sourceFiles('NEVER_STORE')
 
 }
 def clean(){
