@@ -1,3 +1,3 @@
-def clone(strign branch_name,URL Url ) {
+def clone(strig branch_name,URL Url ) {
   git branch: '$branch_name', url: '$Url'
 }
